@@ -2,37 +2,39 @@
 
 Inspired by [laracasts flash](https://github.com/laracasts/flash)
 
-[中文]('/CH.md')
+### 下载
 
-### install
-
-Using Composer
+使用 Composer
 
     composer require g9zz/reminder
 
-Add the service provider to `config/app.php`
+在 `config/app.php` 文件里加入
 
 ```php
 G9zz\Reminder\ReminderServiceProvider::class,
 ```
 
-Optionally include the Facade in config/app.php if you'd like.
+也可以在 `config/app.php` 里加入
 
 ```php
 'Reminder'  => G9zz\Reminder\ReminderFacade::class,
 ```
 
-> You can use reminder() function available.
 
-### Dependencies
+> 建议加上面这条,因为这样你可以使用 `reminder()` 方法
 
-jQuery [toast](https://github.com/CodeSeven/toastr), you need to add css and js to your html.
+### 依赖
 
-### Basic
+jQuery [toast](https://github.com/CodeSeven/toastr), 需要加入`css`文件和`js`文件
 
-You should add `{!! Reminder::message() !!}` to your html.
+- [//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js](//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js)
+- [//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css](//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css)
 
-Then.
+### 基本使用
+
+必须在页面里添加 `{!! Reminder::message() !!}` 
+
+以下几种方式都可以使用!
 
 * Reminder::info('foo', 'bar', []);
 
@@ -43,6 +45,9 @@ Then.
 * Reminder::error('foo', 'bar', []);
 
 * reminder()->info('foo', 'bar', []);
+
+### 如果类似这种`Reminder::error('foo', 'bar', []);` 用不了,可以使用`reminder()->error()`方式
+
 
 ```php
 <?php
@@ -79,11 +84,11 @@ Route::get('/', function () {
 
 ### Options
 
-You can set custom options for Reminder. Run:
+如果要生成一些配置文件,可以执行以下命令
 
     php artisan vendor:publish
 
-to publish the config file for reminder.
+
 
 You can see [toastr's documentation](http://codeseven.github.io/toastr/demo.html) to custom your need.
 

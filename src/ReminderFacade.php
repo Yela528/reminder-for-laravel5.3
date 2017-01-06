@@ -1,6 +1,6 @@
 <?php
 
-namespace Rry\Reminder;
+namespace G9zz\Reminder;
 
 use Illuminate\Support\Facades\Facade;
 

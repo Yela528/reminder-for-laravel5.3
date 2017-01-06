@@ -1,6 +1,6 @@
 <?php
 
-namespace Rry\Reminder;
+namespace G9zz\Reminder;
 
 use Illuminate\Session\SessionManager as Session;
 use Illuminate\Contracts\Config\Repository as Config;
