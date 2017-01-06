@@ -2,7 +2,7 @@
 
 Inspired by [laracasts flash](https://github.com/laracasts/flash)
 
-[中文](./CH.md)
+[中文](CH.md)
 
 ### install
 
