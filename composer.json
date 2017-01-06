@@ -1,11 +1,11 @@
 {
-    "name": "rry/reminder",
+    "name": "g9zz/reminder",
     "description": "A awesome message reminder build with toastr for laravel5.*",
     "license": "MIT",
     "authors": [
         {
-            "name": "RryLee",
-            "email": "rrylee1994@gmail.com"
+            "name": "g9zz",
+            "email": "ylsc633@gmail.com"
         }
     ],
 	"require": {
