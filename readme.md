@@ -2,7 +2,7 @@
 
 Inspired by [laracasts flash](https://github.com/laracasts/flash)
 
-[中文](https://github.com/Yela528/reminder-for-laravel5.3/src/CH.md)
+[中文](https://github.com/Yela528/reminder-for-laravel5.3/blob/master/src/CH.md)
 
 ### install
 
